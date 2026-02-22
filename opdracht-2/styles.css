@@ -75,22 +75,18 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    flex-grow: 12;
-    flex-shrink: 5;
 }
 
 
 /* --- header --- */
 
 header {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 300px;
     background-image: url("../assets/placeholder-image.svg");
     background-position: center;
-    background-size: 100% auto;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
-    justify-content: center;
+    padding: 120px 0;
 }
 
 
@@ -115,6 +111,10 @@ main {
 .product-card button {
     background-color: #383838;
     color: white;
+}
+
+.product-card > img {
+    width: 260px;
 }
 
 .price-line {
